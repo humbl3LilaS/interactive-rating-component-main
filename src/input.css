@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .star-bg {
+        @apply relative
+        after:absolute after:top-0 after:left-0
+        after:block after:w-full after:h-full after:bg-natural-mdGray after:rounded-full after:-z-10 after:opacity-50 ;
+    }
+
+    .custom-list {
+        @apply relative w-10 h-10  rounded-full bg-natural-ltGray bg-opacity-50 hover:bg-amber-600  hover:bg-opacity-100;
+    }
+
+    .custom-input {
+        @apply absolute top-0 left-0 opacity-0 z-50;
+    }
+
+    .custom-label {
+        @apply absolute top-[25%] left-[35%]  font-bold w-full h-full block;
+    }
+}

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&family=Work+Sans:wght@400;600;700&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="output.css">
+    <title>Frontend Mentor | Interactive rating component</title>
+
+
+</head>
+<body class="bg-natural-deepDKBlue text-natural-white flex justify-center items-center h-screen font-overpass flex-col  gap-y-4">
+
+<!-- Rating state start -->
+<div class="bg-natural-dkBlue max-w-ideal w-85 p-5 rounded-xl " id="selectionSide">
+    <div class="star-bg w-fit z-0">
+        <img src="../images/icon-star.svg" alt="Star" class="block my-4 p-2 z-0 relative">
+    </div>
+    <h1 class="my-3 text-2xl font-bold">How did we do?</h1>
+
+    <p class="text-natural-ltGray mb-5">
+        Please let us know how we did with your support request. All feedback is appreciated
+        to help us improve our offering!
+    </p>
+
+    <form action="">
+        <ul class="flex justify-between my-5 min-[500px]:max-w-85 min-[500px]:mx-auto ">
+            <li class="custom-list group">
+                <input type="radio" name="1" id="1" class="custom-input">
+                <label for="1" class="custom-label">1</label>
+            </li>
+            <li class="custom-list">
+                <input type="radio" name="2" id="2" class="custom-input">
+                <label for="2" class="custom-label">2</label>
+            </li>
+            <li class="custom-list">
+                <input type="radio" name="3" id="3" class="custom-input">
+                <label for="3" class="custom-label">3</label>
+            </li>
+            <li class="custom-list">
+                <input type="radio" name="4" id="4" class="custom-input">
+                <label for="4" class="custom-label">4</label>
+            </li>
+            <li class="custom-list">
+                <input type="radio" name="5" id="5" class="custom-input">
+                <label for="5" class="custom-label">5</label>
+            </li>
+        </ul>
+
+        <button type="button" aria-label="Submit"
+                class="text-center w-full mt-3 uppercase py-2 bg-primary rounded-3xl font-bold tracking-ideal hover:text-primary hover:bg-natural-white transition-colors duration-300 ease-in"
+                id="submit";
+        >
+            Submit
+        </button>
+    </form>
+
+</div>
+<!-- Rating state end -->
+
+<!-- Thank you state start -->
+
+<div id="tySide" class="bg-natural-dkBlue max-w-ideal w-85 p-5 rounded-xl  hidden">
+    <img src="../images/illustration-thank-you.svg" alt="Illustration of Thank you" class="block mx-auto my-8" >
+    <p class="max-w-[75%] mx-auto p-1.5 mb-5 bg-natural-ltGray bg-opacity-25 text-center rounded-2xl text-primary">
+        You selected  out <span id="result"></span> of 5
+    </p>
+
+    <h1 class="text-2xl font-bold text-center mb-5">
+        Thank you!
+    </h1>
+
+    <p class="text-center text-natural-ltGray">
+        We appreciate you taking the time to give a rating. If you ever need more support,
+        don’t hesitate to get in touch!
+    </p>
+
+</div>
+<!-- Thank you state end -->
+<script src="function.js"></script>
+
+
+<!--<div class="attribution">-->
+<!--    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.-->
+<!--    Coded by <a href="#">Your Name Here</a>.-->
+<!--</div>-->
+</body>
+</html>
